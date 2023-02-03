@@ -1,19 +1,19 @@
-import java.util.Scanner;
+mport java.util.Scanner;
 /*
 * Да, было бы полезно разбить программу на классы и методы.. наверное
-* 
-*/
-
+*
+* */
 public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean goCalculator = true;
-        int operand1 = scanner.nextInt();
+        float operand1 = scanner.nextFloat();
+
 
         while (goCalculator) {
             char operation = scanner.next().charAt(0);
-            int operand2 = scanner.nextInt();
-            int result = 0;
+            float operand2 = scanner.nextFloat();
+            float result = 0;
             if (operand2 == 0 & operation == '/') {
                 System.out.println("Делить на ноль нельзя!");
                 break;
@@ -47,5 +47,6 @@ public class Calculator {
                 System.out.println(operand1);
             }
         }
+        scanner.close();
     }
 }
