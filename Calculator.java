@@ -1,4 +1,4 @@
-mport java.util.Scanner;
+import java.util.Scanner;
 /*
 * Да, было бы полезно разбить программу на классы и методы.. наверное
 *
